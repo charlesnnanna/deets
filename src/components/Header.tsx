@@ -16,7 +16,7 @@ interface PropTypes {
 function Header(props: PropTypes) {
   const { setSidebarOpen } = props;
   return (
-    <div className="sticky top-0 z-10 flex-shrink-0 flex h-16 bg-white shadow">
+    <section className="sticky top-0 z-10 flex-shrink-0 flex h-16 bg-white shadow">
       <button
         type="button"
         className="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
@@ -25,16 +25,16 @@ function Header(props: PropTypes) {
         <span className="sr-only">Open sidebar</span>
         <Bars3BottomLeftIcon className="h-6 w-6" aria-hidden="true" />
       </button>
-      <div className="flex-1 px-4 flex justify-between">
-        <div className="flex-1 flex">
+      <section className="flex-1 px-4 flex justify-between">
+        <section className="flex-1 flex">
           <form className="w-full flex md:ml-0" action="#" method="GET">
             <label htmlFor="search-field" className="sr-only">
               Search
             </label>
-            <div className="relative w-full text-gray-400 focus-within:text-gray-600">
-              <div className="absolute inset-y-0 left-0 flex items-center pointer-events-none">
+            <section className="relative w-full text-gray-400 focus-within:text-gray-600">
+              <section className="absolute inset-y-0 left-0 flex items-center pointer-events-none">
                 <MagnifyingGlassIcon className="h-5 w-5" aria-hidden="true" />
-              </div>
+              </section>
               <input
                 id="search-field"
                 className="block w-full h-full pl-8 pr-3 py-2 border-transparent text-gray-900 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-0 focus:border-transparent sm:text-sm"
@@ -42,10 +42,10 @@ function Header(props: PropTypes) {
                 type="search"
                 name="search"
               />
-            </div>
+            </section>
           </form>
-        </div>
-        <div className="ml-4 flex items-center md:ml-6">
+        </section>
+        <section className="ml-4 flex items-center md:ml-6">
           <button
             type="button"
             className="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -54,8 +54,8 @@ function Header(props: PropTypes) {
             <BellIcon className="h-6 w-6" aria-hidden="true" />
           </button>
 
-          <Menu as="div" className="ml-3 relative">
-            <div>
+          <Menu as="section" className="ml-3 relative">
+            <section>
               <Menu.Button className="max-w-xs bg-white flex items-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 <span className="sr-only">Open user menu</span>
                 <Image
@@ -66,7 +66,7 @@ function Header(props: PropTypes) {
                   height={500}
                 />
               </Menu.Button>
-            </div>
+            </section>
             <Transition
               as={Fragment}
               enter="transition ease-out duration-100"
@@ -95,9 +95,9 @@ function Header(props: PropTypes) {
               </Menu.Items>
             </Transition>
           </Menu>
-        </div>
-      </div>
-    </div>
+        </section>
+      </section>
+    </section>
   );
 }
 

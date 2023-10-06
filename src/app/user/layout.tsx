@@ -6,9 +6,9 @@ export default function UserLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
+    <section>
       <Sidebar />
       {children}
-    </div>
+    </section>
   );
 }

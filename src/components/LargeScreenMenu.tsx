@@ -5,9 +5,9 @@ import React from 'react';
 
 function LargeScreenMenu() {
   return (
-    <div className="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
-      <div className="flex-1 flex flex-col min-h-0 bg-gray-800">
-        <div className="flex items-center h-16 flex-shrink-0 px-4 bg-gray-900">
+    <section className="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
+      <section className="flex-1 flex flex-col min-h-0 bg-gray-800">
+        <section className="flex items-center h-16 flex-shrink-0 px-4 bg-gray-900">
           <Image
             className="h-8 w-auto"
             src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
@@ -15,8 +15,8 @@ function LargeScreenMenu() {
             width={500}
             height={500}
           />
-        </div>
-        <div className="flex-1 flex flex-col overflow-y-auto">
+        </section>
+        <section className="flex-1 flex flex-col overflow-y-auto">
           <nav className="flex-1 px-2 py-4 space-y-1">
             {navigation.map((item) => (
               <a
@@ -42,9 +42,9 @@ function LargeScreenMenu() {
               </a>
             ))}
           </nav>
-        </div>
-      </div>
-    </div>
+        </section>
+      </section>
+    </section>
   );
 }
 
