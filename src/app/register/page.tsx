@@ -1,5 +1,6 @@
 'use-client';
 
+import Button from '@/components/Button';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 export default function Home() {
@@ -15,16 +16,15 @@ export default function Home() {
             alt="Logo"
           />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Sign in to your account
+            Sign up to start listening
           </h2>
-          <p className="mt-2 text-center text-sm text-gray-600">
-            Or{' '}
-            <a
-              href="#"
-              className="font-medium text-indigo-600 hover:text-indigo-500"
-            >
-              start your 14-day free trial
-            </a>
+          <p className="mt-2 text-center text-sm font-bold text-gray-600">
+            OR{' '}
+            <Button
+              type="button"
+              label="Listen without signing up"
+              color="emerald"
+            />
           </p>
         </div>
 
@@ -96,12 +96,7 @@ export default function Home() {
               </div>
 
               <div>
-                <button
-                  type="submit"
-                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                  Sign in
-                </button>
+                <Button type="submit" label="Sign Up" color="emerald" />
               </div>
             </form>
 

@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import colors from 'tailwindcss/colors'
 
 const config: Config = {
   content: [
@@ -11,12 +12,20 @@ const config: Config = {
       primary: 'rgb(0, 24, 34)',
     },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+          transparent: 'transparent',
+          current: 'currentColor',
+          black: colors.black,
+          white: colors.white,
+          emerald: colors.emerald,
+          indigo: colors.indigo,
+          yellow: colors.amber,
+          gray: colors.gray,
+          blue: colors.violet,
+          red: colors.red,
+          slate: colors.slate,
       },
-    },
+  },
   },
   plugins: [
     require('@tailwindcss/forms'),
