@@ -5,7 +5,7 @@ import React from 'react';
 
 function LargeScreenMenu() {
   return (
-    <section className="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
+    <section className="hidden border-xl border-black md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
       <section className="flex-1 flex flex-col min-h-0 bg-gray-800">
         <section className="flex items-center h-16 flex-shrink-0 px-4 bg-gray-900">
           <Image

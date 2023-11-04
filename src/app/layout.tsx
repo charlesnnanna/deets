@@ -1,4 +1,3 @@
-import Sidebar from '@/components/sidebar';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Josefin_Sans } from 'next/font/google';
@@ -19,7 +18,7 @@ export default function RootLayout({
   return (
     <StoreProvider>
       <html lang="en">
-        <body className={`${inter.className} bg-white px-4`}>{children}</body>
+        <body className={`${inter.className} bg-white`}>{children}</body>
       </html>
     </StoreProvider>
   );
